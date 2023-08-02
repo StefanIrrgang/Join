@@ -1,0 +1,550 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Inter';
+    overflow: auto;
+}
+
+.AllMainBoard {
+    display: flex;
+    flex-direction: row;
+    background: #F6F7F8;
+}
+
+.inputSearchBoardContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+    border: 1px solid #a8a8a8;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: #FFF;
+}
+
+.cardBoardAll {
+    min-height: 300px;
+    min-width: 12vw;
+}
+
+#inputSearchBoard {
+    border: none;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    color: black;
+}
+
+.searchImage {
+    cursor: pointer;
+}
+
+.headBoard {
+    z-index: 2;
+    display: flex;
+    width: 1056px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headBoardRight {
+    display: flex;
+    gap: 32px;
+}
+
+.addTaskButton {
+    display: flex;
+    width: auto;
+    height: 55px;
+    padding: 18px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #2A3647;
+    background: #2A3647;
+    color: white;
+    color: var(--white, #FFF);
+    font-family: 'Inter';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    cursor: pointer;
+}
+
+.headBoard h1 {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.categoryBoardAll {
+    display: inline-flex;
+    height: 661px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 26px;
+    flex-shrink: 0;
+}
+
+.categoryBoardHead {
+    display: flex;
+    width: 250px;
+    height: 661px;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.categoryBoard {
+    width: 1058px;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.categoryBoardSub {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+    margin-top: 40px;
+}
+
+.categoryBoardSub span {
+    color: #2A3647;
+    font-family: 'Inter';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.headBoardRightImage {
+    display: flex;
+    width: 12px;
+    height: 12px;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 2px solid var(--version-2-main-color, #2A3647);
+    cursor: pointer;
+}
+
+.headBoardRightImage:hover {
+    display: flex;
+    width: 12px;
+    height: 12px;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 2px solid var(--version-2-main-color, #2A3647);
+    cursor: pointer;
+    background-color: #29ABE2;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+}
+
+
+.headBoardRightImage img {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.headBoardRightImageBlind {
+    display: flex;
+    width: 12px;
+    height: 12px;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 2px solid var(--version-2-main-color, #f6f7f8);
+}
+
+.headBoardRightImageBlind img {
+    display: none;
+}
+
+.categoryBoardSub img {
+    object-fit: contain;
+}
+
+.cardBoard {
+    display: flex;
+    width: 212px;
+    padding: 18px 19px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    background: var(--white, #FFF);
+    margin-bottom: 12px;
+    box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+}
+
+.cardBoardInside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.cardBoardInsideCategory {
+    display: flex;
+    padding: 4px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    background: #FF7A00;
+    color: white;
+}
+
+.cardBoardInsideTitleAndDescrption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.cardBoardInsideTitle {
+    color: var(--version-2-main-color, #2A3647);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    max-height: 62px;
+}
+
+.cardBoardInsideDescription {
+    color: var(--icon, #A8A8A8);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    max-height: 90px;
+    overflow-y: auto;
+}
+
+.cardBoardInsideDescription::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cardBoardInsideProgress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 14px;
+}
+
+.cardBoardInsideProgress img {
+    width: 138px;
+    height: 8px;
+    border-radius: 2px;
+    background: #F4F4F4;
+}
+
+.cardBoardInsideProgress p {
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+}
+
+.progressBar {
+    width: 138px;
+    height: 8px;
+    border-radius: 2px;
+    background: #F4F4F4;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #29ABE2;
+}
+
+.cardBoardInsideUserAndPrio {
+    display: flex;
+    width: 100%;
+    height: 38px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.InsideUser {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    min-width: auto;
+    max-width: 45%;
+    height: 35px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    overflow: hidden;
+    padding-left: 6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.label-card {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    color: white;
+    padding: 0px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 58px;
+    border: 1px solid var(--white, #FFF);
+    margin-left: -6px;
+}
+
+.cardBoardInsideUserAndPrio img {
+    width: 17px;
+    height: 12px;
+    flex-shrink: 0;
+    padding: 10px 6px;
+}
+
+.addTaskPopUp {
+    position: absolute;
+    top: 64px;
+    left: 128px;
+    right: 128px;
+    bottom: 64px;
+    z-index: 99;
+}
+
+.d-none {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background: rgb(0 0 0 / 39%);
+}
+
+div#CardContainer {
+    background: #fff;
+    padding: 40px 60px;
+    border-radius: 40px;
+    animation: slide-in 1s both;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.carddetail {
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    max-width: 525px;
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0px 0px 4px 0px #0000001A;
+    border-radius: 30px;
+}
+
+div#cardDetailTitle {
+    font-size: 61px;
+    font-weight: 700;
+    line-height: 73px;
+    letter-spacing: 0em;
+    margin: 10px 0px;
+}
+
+div#cardDetailDesc {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+div#cardDetailPrio,
+div#cardDetailDueDate {
+    margin-bottom: 10px;
+}
+
+.detlabel {
+    font-family: Inter;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.cartdetailaction {
+    display: flex;
+    justify-content: flex-end;
+}
+
+div#deleteCard {
+    border: 1px solid;
+    border-radius: 10px 0px 0px 10px;
+    padding: 0px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#editCard {
+    border: 1px solid #2A3647;
+    border-radius: 0px 10px 10px 0px;
+    padding: 0px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2A3647;
+}
+
+div#editCard:hover {
+    background: #29abe2;
+    border-color: #29abe2;
+}
+
+.cartdetailaction div:hover {
+    cursor: pointer;
+}
+
+.cartdetailaction div {
+    line-height: 1em!important;
+    margin: 0px!important;
+    padding: 0px!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+div#deleteCard:hover {
+    border-color: #29abe2;
+}
+
+img.hover {
+    width: 32px;
+    height: auto;
+    display: none;
+}
+
+div#deleteCard:hover img.hover{
+    display: block;
+}
+
+div#deleteCard:hover img.default{
+    display: none;
+}
+
+input#editCardTitle {
+    padding: 12px 21px 12px 21px;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    color: #000;
+    margin-bottom: 10px;
+    min-width: 100;
+    width: 100%;
+    max-width: 100;
+    display:inline-block;
+}
+
+textarea#editCardDescription {
+    padding: 12px 21px 12px 21px;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    color: #000;
+    margin-bottom: 10px;
+    min-width: calc(100% - 44px);
+    width: calc(100% - 44px);
+    max-width: calc(100% - 44px);
+    min-height: 80px;
+    font-size: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.includeTaskForm {
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+
+    .AllMainBoard {
+        flex-direction: column;
+    }
+
+    .middle .mainBoard {
+        position: relative;
+        width: calc(100% - 40px);
+        height: 100%;
+        margin: 0px;
+        padding: 25px 20px 25px 20px;
+    }
+
+}

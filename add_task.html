@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <script src="js/include.js"></script>
+    <script src="js/summary_script.js"></script>
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/summary_style.css">
+    <script src="js/add_task.js"></script>
+    <link rel="stylesheet" href="css/add_task.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+</head>
+
+<body onload="includeTemplates()">
+    <div class="main-content">
+        <div class="sidebar" w3-include-html="templates/sidebar.html">
+
+        </div>
+
+        <div class="middle">
+            <div class="header" w3-include-html="templates/header.html">
+
+            </div>
+            <div class="content">
+                <div class="mainAddTask">
+                    <div class="headAddTask">
+                        <h1>Add Task</h1>
+                    </div>
+                    <div class="left-right-split">
+                        <div class="addTask-left">
+                            <div class="titleAddTask">
+                                <h5>Title</h5>
+                                <input required id="addTaskTitle" type="text" placeholder="Enter a title">
+                            </div>
+                            <div class="description">
+                                <h5>Description</h5>
+                                <textarea required name="" id="descriptionTextarea" cols="30" rows="4" style="resize: none;" placeholder="Enter a Description"></textarea>
+                            </div>
+                            <div class="category">
+                                <h5>Category</h5>
+                                <div class="selectContainer" id="addCategory" onclick="openDropdownCategory()">
+                                    Select Task Category
+                                </div>
+                            </div>
+                            <div class="assignedTo">
+                                <h5>Assigned to</h5>
+                                <div class="selectContainer" id="addContact" onclick="openDropdownContact()">
+                                    Select Contacts to assign
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="separator"><svg xmlns="http://www.w3.org/2000/svg" width="2" height="520" viewBox="0 0 2 400" fill="none">
+                            <path d="M0.999512 1L1 401" stroke="#D1D1D1" stroke-linecap="round"/>
+                            </svg></div>
+                        <div class="addTask-right">
+                            <div class="date">
+                                <h5>Due date</h5>
+                                <input required id="date" type="date">
+                            </div>
+                            <div class="prio">
+                                <h5>Prio</h5>
+                                <div class="addTaskPrios">
+                                    <p class="SubTaskPrios">Urgent<img src="/assets/img/board/PrioHigh.png" alt=""></p>
+                                    <p class="SubTaskPrios">Medium<img src="/assets/img/board/PrioMid.png" alt=""></p>
+                                    <p class="SubTaskPrios">Low<img src="/assets/img/board/PrioLow.png" alt=""></p>
+                                </div>
+                            </div>
+                            <div class="subtask">
+                                <h5>Subtasks</h5>
+                                <input placeholder="Add new subtask" type="text" id="addNewSubtask">
+                                <div class="checkboxes">
+                                    <div class="boxes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 18 17" fill="none">
+                                            <rect x="1" y="0.5" width="16" height="16" rx="3"
+                                                fill="url(#paint0_linear_71853_3184)" stroke="black" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_71853_3184" x1="9" y1="0.5" x2="9"
+                                                    y2="16.5" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#F9F9F9" />
+                                                    <stop offset="1" stop-color="#F0F0F0" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>Subtask 1
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearCreateButtons">
+                        <button class="clearBtn"><div>Clear</div><img src="/assets/img/board/clear.png" alt=""></button>
+                        <button class="createBtn"><div>Create Task</div><img src="/assets/img/board/create.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
