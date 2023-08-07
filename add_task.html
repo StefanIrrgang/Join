@@ -7,9 +7,10 @@
     <title>Contacts</title>
     <script src="js/include.js"></script>
     <script src="js/summary_script.js"></script>
-    <link rel="stylesheet" href="css/index_style.css">
-    <link rel="stylesheet" href="css/summary_style.css">
     <script src="js/add_task.js"></script>
+    <!-- <link rel="stylesheet" href="css/index_style.css"> -->
+    <link rel="stylesheet" href="css/summary_style.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/add_task.css">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
 </head>
@@ -26,7 +27,7 @@
             </div>
             <div class="content">
                 <div class="mainAddTask">
-                    <div class="headAddTask">
+                    <div class="title">
                         <h1>Add Task</h1>
                     </div>
                     <div class="left-right-split">
@@ -52,9 +53,7 @@
                                     </div>
                             </div>
                         </div>
-                        <div class="separator"><svg xmlns="http://www.w3.org/2000/svg" width="2" height="520" viewBox="0 0 2 400" fill="none">
-                            <path d="M0.999512 1L1 401" stroke="#D1D1D1" stroke-linecap="round"/>
-                            </svg></div>
+                        <div class="separator"></div>
                         <div class="addTask-right">
                             <div class="date">
                                 <h5>Due date</h5>
@@ -91,7 +90,7 @@
                         </div>
                     </div>
                     <div class="clearCreateButtons">
-                        <button class="clearBtn"><div>Clear</div><img src="/assets/img/board/clear.png" alt=""></button>
+                        <button class="clearBtn"><div>Clear</div><img src="/assets/img/board/clear-black.svg" class="default" alt=""><img src="/assets/img/board/clear-blue.svg" class="hover" alt=""></button>
                         <button class="createBtn"><div>Create Task</div><img src="/assets/img/board/create.png" alt=""></button>
                     </div>
                 </div>

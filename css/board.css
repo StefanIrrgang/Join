@@ -5,10 +5,6 @@ body {
     overflow: auto;
 }
 
-.middle .content {
-    height: 100% !important;
-}
-
 html::-webkit-scrollbar {
     width: 0px;
 }
@@ -31,8 +27,9 @@ html::-webkit-scrollbar {
 }
 
 .cardBoardAll {
-    min-height: 100%;
+    min-height: 240px;
     min-width: 12vw;
+    margin-bottom: 0px;
 }
 
 #inputSearchBoard {
@@ -95,7 +92,6 @@ html::-webkit-scrollbar {
 
 .categoryBoardAll {
     display: inline-flex;
-    height: 661px;
     justify-content: center;
     align-items: flex-start;
     gap: 26px;
@@ -607,8 +603,8 @@ input#editCardDueDate {
         flex-wrap: wrap;
     }
 
-    .middle .content {
-        height: 100% !important;
+    .cardBoardAllDone {
+        margin-bottom: 32px !important;
     }
 
 }
@@ -636,5 +632,142 @@ input#editCardDueDate {
 }
 
 @media(max-width: 992px) {
+    .categoryBoardAll {
+        gap: 96px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 
+    .headBoard {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cardBoardAllDone {
+        margin-bottom: 128px;
+    }
+
+    .cardBoardAllAWFB {
+        margin-bottom: 128px;
+    }
+
+    .content {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .middle .content{
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
 } 
+
+@media(max-width: 716px) {
+    .categoryBoardAll {
+        gap: 32px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .content {
+        padding-left: 0px !important;
+    }
+}
+
+@media(max-width: 630px) {
+    .headBoard {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headBoard h1 {
+        font-size: 40px !important;
+    }
+
+    .headBoardRight {
+        gap: 32px;
+    }
+
+    .middle .content {
+        width: 100% !important;
+    }
+
+    .content {
+        padding-left: 0px !important;
+    }
+
+    .cardBoardAllDone {
+        margin-bottom: 128px;
+    }
+
+    .cardBoardAllAWFB {
+        margin-bottom: 128px;
+    }
+}
+
+@media(max-width: 585px) {
+    .categoryBoardAll {
+        gap: 32px;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .headBoardRight {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .headBoard {
+        width: 100%;
+        gap: 8px;
+        align-items: center;
+        margin: 0;
+        padding-top: 16px !important;
+    }
+
+    .cardBoardAllDone {
+        margin-bottom: 128px;
+    }
+
+    .cardBoardAllAWFB {
+        margin-bottom: 128px;
+    }
+
+    .inputSearchBoardContainer {
+        width: 290px;
+    }
+
+    .content {
+        padding: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .middle .content {
+        width: 100% !important;
+    }
+}
+
+@media(max-width: 550px) {
+    .categoryBoardAll {
+        gap: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .cardBoardAllDone {
+        margin-bottom: 128px !important;
+    }
+
+    .headBoard h1 {
+        font-size: 32px !important;
+    }
+
+    .headBoard {
+        padding-top: 0px !important;
+    }
+    .categoryBoardSub {
+        margin-top: 16px !important;
+    }
+}
